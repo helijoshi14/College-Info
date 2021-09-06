@@ -1,0 +1,512 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    /*overflow-x: hidden; */
+}
+
+#nav{
+    background-color: #0c2340 !important;
+    border-width: thick;
+    border-top-style: solid;
+    border-color: #ae9142;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+
+.navbar-brand{
+    display: flex;
+}
+
+.logo{
+    height: 50px;
+}
+
+.logo-text{
+    position: relative;
+    top: 0.6rem;
+    left: 0.6rem;
+    line-height: 20px;
+}
+
+#bgimg{
+    background-image: url("1209519.jpg");
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    width: 100%;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    z-index: -10;
+  }
+
+#back{
+    background-color: rgba(163, 163, 163, 0.79);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    }
+
+#navlist{
+    margin-right: 5rem;
+    font-weight: 900;
+}
+
+.vessel{
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    grid-row-gap: 100px;
+}
+
+.content{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.clr{
+    background-color: #0c2340a9;
+}
+
+.content h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: underline;
+    margin-bottom: 3rem;
+}
+
+.content p{
+    font-size: larger;
+    font-weight: 600;
+    line-height: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.wrapper{
+    margin-top: 6rem;
+}
+
+.images{
+    display: grid;
+    justify-content: center;
+
+}
+
+.images img{
+    width: 600px;
+}
+
+.footer{
+    background-color: rgb(197, 197, 197);
+    padding: 2rem;
+}
+
+#foot{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+}
+
+.footer ul li{
+    list-style: none;
+}
+.footer ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+#trademark img{
+    width: 80px;
+}
+
+a.ex1:hover, a.ex1:active {
+  color: red;
+}
+
+.fa 
+{
+    font-size: 25px !important;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    transition-duration: 250ms;
+    transition-timing-function:  ease-in;
+    margin: 5px;
+}
+
+.fa:hover {
+    color: rgb(0, 0, 0);
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5);
+    
+  }
+  
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+  
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+#social a:hover{
+    color: white;
+
+}
+
+.highlights{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #0c2340e7;
+    color: #ffffff;
+    font-size: larger;
+}
+
+.spacing div{
+    margin: 2rem;
+}
+
+.spacing div h1{
+    color: #ae9142;
+    font-weight: 900;
+    font-size: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* this is for the contact form............................................................................................... */
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  #form{
+      margin-top: 10rem;
+      margin-bottom: 5rem;
+  }
+
+  .heading3{
+    font-size: 1.5rem;
+    color: #d61b3c;
+    font-weight: bold;
+    border bottom: 2px solid #26304d;
+    padding-bottom: 0.14286rem;
+  }
+
+  /* ........................................................media queries starts from here................................................... */
+
+  @media screen and (max-width:1375px){
+    .images img{
+        width: 500px;
+    }
+
+    .content p{
+        font-size: large;
+        
+    }
+  }
+
+  @media screen and (max-width:1180px) {
+    .images {
+        justify-content: right;
+    }
+
+    .content p{
+        font-size: medium;
+    }
+
+    .highlights{
+        font-size: medium;
+    }
+
+    .spacing div h1{
+        font-size: 2rem;
+    }
+  }
+
+  @media screen and (max-width:1135px) {
+      .vessel{
+        margin-right: 2vw;
+        margin-left: 2vw;
+      }
+  }
+
+  @media screen and (max-width:1050px) {
+    .content p{
+        font-size: small;
+    }
+
+    .images img{
+        width: 400px;
+    }
+
+    .content h1{
+        margin-bottom: 1rem;
+        font-size: 35px;
+    }
+  }
+
+  @media screen and (max-width:800px){
+    .vessel{
+        margin-top: 2rem;
+        grid-template-columns: auto;
+        grid-row-gap: 25px;
+    }
+
+    .images{
+        justify-content: center;
+    }
+
+    .images img{
+        width: 500px;
+    }
+
+    .content p{
+        font-size: medium;
+    }
+  }
+
+  @media screen and (max-width: 725px){
+    .spacing div h1{
+        font-size: 2rem;
+    }
+
+    .highlights{
+        font-size: medium;
+    }
+
+    .fa{    
+    font-size: 20px !important;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    }
+
+    #foot{
+        grid-template-columns: 33.33% 33.33% 33.33% ;
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+
+    #social{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #trademark{
+        font-size: 12px;
+    }
+  }
+
+  @media screen and (max-width: 500px){
+    .vessel{
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .content{
+        margin-left: 15px;
+        margin-left: 15px;
+    }
+  }
+
+  @media screen and (max-width: 450px){
+      .highlights{
+          display: flex;
+          flex-direction: column;
+      }
+    }
+  
+  @media screen and (max-width: 400px){
+    .content h1{
+        font-size: 30px;
+    }
+
+    .content p{
+        width: 100vw;
+
+    }
+    .images img{
+        width: 100vw;
+    }
+  }
+
+
+
+
+/* sun dad che pachi call karu
+ok
+i love you boo booo
+i love you too jaan
+hu aa kru chu hoo ne complete tu joo
+ha sweetie 
+avu ho ne shivu susu kari ne
+haa cuttuu
+muahhhhh jaa
+hehee tataa
+byeee
+avi gaiiiii
+haa boo booo
+fw bhi kari lidhu
+oye hoyeee
+joo site
+hmmm
+hehee... i lovveeee yooouuuuu hubby
+cuttuu i love you too wifeyyyyy
+sorry
+hve kidhu ne toh bov maris
+lips?
+hehee
+rukk footer banavi lav hoo ne jaan 
+call kr ne thai emm hoi toh
+haan sweetie karu ek min
+haan
+bag ma badhu muki dav pachi karu
+ok
+bov utavad huhh
+i love you bhi na keva de
+awww sorry jaan
+blehh
+tu usualy vai jai etle mne emm jati rai hais 
+i loveee you wifeeyyyyyyy
+bleh bleh bleehhh
+annnnnn
+huhh
+plishhhh
+hmmm... i love you too
+cuttuuuu
+badha programmer loko apdne gaado apse
+LOL comments mate ?
+hknn... comment no galat istamal kariye chie to
+chalee apne su bhle ape
+blehhh kri deje tu
+hknn... avu ho ne jaan
+haan wifey
+hmmm
+i wuvvvvvvvvvvvvvvv youuuuuuuuuu
+I LOVE YOU TOOO HUBBY
+hehee
+byeee
+jaaaa
+avi gai boo booooo
+haan cutiee
+Dad che
+haan cuttu
+i lovee youuuu
+i love you too
+avu 1 min
+haan boo boo
+image ni size shayad change karu biju kai nathi karva nu
+barabar j che pn 1st vadi image thodi moti rakhvi che
+haan honey
+hmm ok
+kai naiii dad keta hata ke savare veli uthi ja j to
+i looovvvveeee yoooouuuuu huuubbbyyyyyy!!!!
+yad j hoy ne
+ek min... payment aje apai na gyu?
+jya bhi hoy ena thi su farak pde
+ye sahi hai
+6oti boo boo
+payment no maksat to puro thai gyo ne aje
+cutieee
+haan hubby
+tare badhu karvu hoy ane mitu ne ignore huhh
+hmm hmmm atyar thi avu karas
+na karto hoy to bbhi avu j ke che
+hse chlo theeekk che
+hmmm ja hve hu fw kari ne avu 
+ummm 5 mins
+na naa 10 
+haan sweetie
+i love youuuuu <3 <3 <3
+cutuuu
+joyu maru typing saru che
+this is called typing my friend
+shhh i love you
+i love you too
+jaa hve bc
+achha boo booo hoy e na jai?
+eyy 6otu baby
+tara karta aaeshu aayu mota che
+chu ne hu smart boo boo
+he nee
+sorry hubby
+tari pase karavyu
+hmmm ok
+kari nakh 
+hmmmm
+hknn
+tare olu nathi thatu ctrl kari ne select
+nai 
+cursor multiple jagya
+achhaa
+annnn
+tu kari nakh je
+hehee... naa budhuu
+upar na ma 1 tab leave karyu che e
+pheww...
+byeeeeeee
+muaahhh 
+I LOVE YOUU HUBBY
+I LOVE YOU TOOO wifeyyyyy
+*/
