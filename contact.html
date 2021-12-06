@@ -41,10 +41,12 @@
             <form action="action_page.php">
         
             <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <input type="text" id="fname" name="firstname" placeholder="Your name.." pattern="[A-Za-z]{4}"
+            oninvalid="alert(' Fill characters in First Name !');">
         
             <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.." pattern="[A-Za-z]{4}"
+            oninvalid="alert(' Fill characters in Last Name !');">
         
             <label for="country">Country</label>
             <select id="country" name="country">
